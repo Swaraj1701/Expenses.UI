@@ -21,7 +21,7 @@ currentUser$ = this.currentUserSubject.asObservable();
   }
 
   login(credentials: User): Observable<AuthResponse>{
-    return this.http.post<AuthResponse>(this.apiUrl+"/login", credentials)
+    return this.http.post<AuthResponse>(this.apiUrl+"/Login", credentials)
     .pipe
     (
       tap((response)=> {
@@ -32,7 +32,7 @@ currentUser$ = this.currentUserSubject.asObservable();
   }
 
   register(credentials: User): Observable<AuthResponse>{
-    return this.http.post<AuthResponse>(this.apiUrl+"/register", credentials)
+    return this.http.post<AuthResponse>(this.apiUrl+"/Register", credentials)
     .pipe(
       tap((response)=> {
         localStorage.setItem('token', response.token);
