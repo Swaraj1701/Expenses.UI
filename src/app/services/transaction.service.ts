@@ -7,7 +7,7 @@ import { Transactions } from '../models/transactions';
 })
 export class TransactionService {
 
-  private apiUrl = 'https://expenseappapi-d5gkczacegebb2gr.centralindia-01.azurewebsites.net//api/Transactions';
+  private apiUrl = 'https://expenseappapi-d5gkczacegebb2gr.centralindia-01.azurewebsites.net/api/Transactions';
 
   constructor(private http: HttpClient) { }
 
